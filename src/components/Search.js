@@ -3,6 +3,7 @@ import {Button, TextField} from "@material-ui/core"
 import ArtTrackIcon from '@material-ui/icons/ArtTrack';
 import styled from 'styled-components'
 import {useState} from "react";
+import {useSelector} from "react-redux";
 
 
 const Search = () => {
@@ -15,6 +16,7 @@ const Search = () => {
         { title: "Schindler's List", year: 1993 },
     ]
     const [options] = useState(initOptions);
+    const selector = useSelector((state) => state.search.data)
 
     const Div = styled.div`
       padding: 25px;
