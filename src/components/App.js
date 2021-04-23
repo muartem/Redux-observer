@@ -1,10 +1,12 @@
 import Search from "./Search";
+import Post from "./Post";
 
 
 function App() {
   return (
     <div>
-      <Search />
+        <Search />
+        <Post />
     </div>
   );
 }
